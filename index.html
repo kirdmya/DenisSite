@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Визитка</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ваше Имя</h1>
+        <p>Ваша Деятельность</p>
+    </header>
+
+    <section>
+        <h2>О себе</h2>
+        <div class="slider">
+            <div><img src="static/images/1.jpg" alt="Изображение 1" width="400" height="400"></div>
+            <div><img src="static/images/2.jpg" alt="Изображение 2" width="400" height="400"></div>
+            <div><img src="static/images/3.jpg" alt="Изображение 3" width="400" height="400"></div>
+            <!-- Добавьте другие изображения по мере необходимости -->
+        </div>
+        <p>Несколько слов о том, кто вы и чем занимаетесь.</p>
+    </section>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true, // Показывать точки для навигации
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>'
+            });
+        });
+    </script>
+
+    <section>
+        <h2>Портфолио</h2>
+        <!-- Здесь можете добавить ссылки или изображения на ваши проекты -->
+    </section>
+
+    <section>
+        <h2>Контакты</h2>
+        <p>Email: ваш.email@example.com</p>
+        <p>Телефон: +7 (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <div class="social-buttons">
+            <!-- Здесь добавлены кнопки для социальных сетей -->
+            <button onclick="window.open('ссылка_на_ваш_profil_facebook', '_blank')">Facebook</button>
+            <button onclick="window.open('ссылка_на_ваш_profil_twitter', '_blank')">Twitter</button>
+            <button onclick="window.open('ссылка_на_ваш_profil_instagram', '_blank')">Instagram</button>
+            <!-- Добавьте другие социальные сети по мере необходимости -->
+        </div>
+        <p>&copy; 2023 Ваше Имя. Все права защищены.</p>
+    </footer>
+</body>
+</html>
