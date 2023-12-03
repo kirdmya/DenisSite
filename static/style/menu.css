@@ -1,0 +1,53 @@
+.menu-button {
+    position: relative;
+}
+
+#menu-toggle {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+#menu-toggle:hover {
+    background-color: #2980b9;
+}
+
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the menu button */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #fff; /* Set your desired background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for style */
+    z-index: 1; /* Ensure the menu is above other elements */
+}
+
+.menu-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.menu-list li {
+    margin-bottom: 20px; /* Increased vertical space between menu items */
+}
+
+.menu-list a {
+    display: block;
+    padding: 10px 20px; /* Adjust padding for each menu item */
+    text-decoration: none;
+    color: #333; /* Set your desired text color */
+    transition: background-color 0.3s ease;
+}
+
+.menu-list a:hover {
+    background-color: #f0f0f0; /* Set your desired hover background color */
+}

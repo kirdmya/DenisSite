@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden; /* Hide overflow to prevent scrolling when the menu is open */
 }
 
 header {
@@ -24,6 +25,16 @@ section {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #FFD700; /* Blue color for headings */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
 }
 
 footer {
@@ -51,7 +62,7 @@ footer {
 
 .slider {
     margin: 0 auto;
-    max-width: 400px; /* Максимальная ширина слайдера */
+    width: 80%;
 }
 
 .slick-prev,
@@ -74,4 +85,9 @@ footer {
     margin: 0 auto;
     width: 100%;
     height: auto;
+}
+
+.company-description {
+    text-align: center;
+    padding: 20px;
 }

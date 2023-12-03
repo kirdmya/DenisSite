@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/style/main.css">
+    <link rel="stylesheet" href="static/style/menu.css">
     <title>Визитка</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -12,37 +13,46 @@
 </head>
 <body>
     <header>
-        <h1>Ваше Имя</h1>
-        <p>Ваша Деятельность</p>
+        <div class="logo-container">
+            <img src="static/images/logo.png" alt="Логотип" width="100" height="100">
+            <div class="company-info">
+                <h1>CASEY TOWERS</h1>
+            </div>
+        </div>
+        <div class="menu-button">
+            <button id="menu-toggle">Меню</button>
+            <div class="menu-list">
+                <ul>
+                    <li><a href="#">Пункт 1</a></li>
+                    <li><a href="#">Пункт 2</a></li>
+                    <li><a href="#">Пункт 3</a></li>
+                    <li><a href="#">Пункт 4</a></li>
+                    <li><a href="#">Пункт 5</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="script/menu.js"></script>
     </header>
 
+
+    <div class="company-description">
+        <h1>Строительство и продажа домов высокого качества элитного образца под ключ</h1>
+        <p>Ваша компания предлагает эксклюзивные дома, гармонично сочетающие комфорт и эстетику. Доверьте нам свой домовладение, и мы создадим для вас уют и безопасность.</p>
+    </div>
+
     <section>
-        <h2>О себе</h2>
         <div class="slider">
             <div><img src="static/images/1.jpg" alt="Изображение 1" width="400" height="400"></div>
             <div><img src="static/images/2.jpg" alt="Изображение 2" width="400" height="400"></div>
             <div><img src="static/images/3.jpg" alt="Изображение 3" width="400" height="400"></div>
             <!-- Добавьте другие изображения по мере необходимости -->
         </div>
-        <p>Несколько слов о том, кто вы и чем занимаетесь.</p>
     </section>
 
-    <script>
-        $(document).ready(function(){
-            $('.slider').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                dots: true, // Показывать точки для навигации
-                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-                nextArrow: '<button type="button" class="slick-next">Next</button>'
-            });
-        });
-    </script>
+    
 
-    <section>
-        <h2>Портфолио</h2>
-        <!-- Здесь можете добавить ссылки или изображения на ваши проекты -->
-    </section>
+    <script src="script/slider.js"></script>
+
 
     <section>
         <h2>Контакты</h2>
