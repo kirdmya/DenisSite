@@ -1,0 +1,51 @@
+.company-description {
+    max-width: 800px; /* Максимальная ширина блока для лучшего чтения текста */
+    margin: 0 auto; /* Центрирование блока на странице */
+    padding: 20px; /* Поля вокруг содержимого */
+}
+
+.company-description h1, h2 {
+    color: #333; /* Цвет заголовков */
+}
+
+.company-description p, ul {
+    color: #666; /* Цвет текста */
+}
+
+.company-info, .company-advantages, .company-future {
+    margin-top: 20px; /* Отступ между разделами */
+}
+
+.company-description ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding: 0; /* Убираем внутренние отступы у списка */
+}
+
+.company-description ul li {
+    position: relative;
+    padding-left: 20px; /* Добавляем отступ слева для маркера */
+}
+
+.company-description ul li::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #333; /* Цвет маркера */
+    border-radius: 50%;
+    opacity: 0.5; /* Прозрачность маркера */
+}
+
+.company-description ul li em {
+    font-style: italic; /* Стиль текста внутри пунктов списка - курсив */
+}
+
+.company-info, .company-advantages, .company-future {
+    background-color: #dddada; /* Задний фон для выделения текста */
+    padding: 15px; /* Дополнительный отступ вокруг текста */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+/* Дополнительные стили можно добавить по необходимости */

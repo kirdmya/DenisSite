@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden; /* Hide overflow to prevent scrolling when the menu is open */
+    
 }
 
 header {
@@ -35,6 +35,19 @@ p {
     font-size: 16px;
     line-height: 1.5;
     color: #555;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    color: #666;
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer {
@@ -91,3 +104,4 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
