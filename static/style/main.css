@@ -73,35 +73,6 @@ footer {
     border-radius: 4px;
 }
 
-.slider {
-    margin: 0 auto;
-    width: 80%;
-}
 
-.slick-prev,
-.slick-next {
-    font-size: 18px;
-    color: #333;
-}
 
-.slick-dots {
-    bottom: -30px;
-}
-
-.slick-dots li button {
-    font-size: 10px;
-    color: #333;
-}
-
-/* Стили для слайдов */
-.slick-slide img {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-}
-
-.company-description {
-    text-align: center;
-    padding: 20px;
-}
 
